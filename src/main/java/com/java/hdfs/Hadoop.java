@@ -25,8 +25,8 @@ public class Hadoop {
 	protected Configuration localConf = null;
 	// hadoop 접속 주소 (hadoop server ip 수정 할것) <<<<<<<<<<<<<<<<<<
 	protected final String URL = "hdfs://192.168.3.34:9000";
-	protected final String LOCAL = "/root/data/";
-	//protected final String LOCAL ="C:\\Users\\GD7\\Desktop\\code\\";
+	//protected final String LOCAL = "/root/data/";
+	protected final String LOCAL ="C:\\Users\\GD7\\Desktop\\code\\";
 	// hadoop 정제 대상 경로 / 처리 결과 저장 경로 및 파일
 	protected final String INPUT = "/input";
 	protected final String OUTPUT = "/output";

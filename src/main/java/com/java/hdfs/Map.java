@@ -23,10 +23,13 @@ public class Map extends Mapper<LongWritable, Text, Text, IntWritable> {
 
 		textKey.set(values[0]+","+values[1]);
 		//4.출력의 값으로 정수형 1을  intwritable 자료형으로 변환
+		
 		if(!"NA".equals(values[15])) {
-			int time=Integer.parseInt(values[15])/60;
+			int time=Integer.parseInt(values[15]);
+			if(time>0) {
 			IntWritable intValue = new IntWritable(time);
 			context.write(textKey, intValue);
+			}
 		}
 		// 전체 결과 출력하기
 
